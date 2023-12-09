@@ -7,7 +7,8 @@
 1. Install php
 2. Clone this github repo
 3. Run php main.php
-4. Enter how many characters
+4. Go to passGen directory
+5. Enter how many characters
 ```
 
 # License
