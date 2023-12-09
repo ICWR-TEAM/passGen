@@ -1,1 +1,1 @@
-# passGen
+# Password Generator
