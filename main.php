@@ -27,7 +27,7 @@ class Main
 
 			if( isset($options["h"])){
 				echo "php main.php -n 'count-character' --char='character'\n";
-				echo "   -n 'count-character' Default 12 Character\n";
+				echo "   -c 'count-character' Default 12 Character\n";
 				echo "   --char='character' Default 0-9a-Z and Symbols\n";
 				exit();
 			}
@@ -52,7 +52,8 @@ class Main
 				$rand = rand(0,count($chare)-1);
 				$res_char .= $chare[$rand];
 			}
-			echo "Result: ".$res_char."\n";
+			echo "How Many Characters: " . $count_char . "\n";
+			echo "Result: " . $res_char . "\n";
 		}else {
 			echo "Use numbers!\n";
 		}
@@ -76,7 +77,9 @@ class Main
 		}
 	}
 }
-$asd = new Main();
-echo  $asd->proc_website(char:"aA", count:"12");
 
+if(php_sapi_name() == "cli")
+{
+	$call_main = new Main();
+}
 ?>
