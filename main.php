@@ -79,6 +79,7 @@ class Main
 }
 
 
+
 if(php_sapi_name() == "cli")
 {
 	$call_main = new Main();
